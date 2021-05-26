@@ -1,0 +1,10 @@
+<resources>
+	<string name="app_name">Device Profile</string>
+	<string name="welcome_text">Hello! I\'m a droid.</string>
+	<string name="hint_touch_text">Touch image show ID</string>
+	<string name="label_ids">ID List:</string>
+	<string name="id_type_oaid">OAID</string>
+	<string name="hint_debug_message">Debug message</string>
+	<string name="id_md5_radio">Include md5</string>
+	<string name="hint_empty_id">The device id is empty or not reading</string>
+</resources>
