@@ -25,37 +25,71 @@
 			app:layout_constraintHorizontal_bias="0.497"
 			android:paddingStart="10dp" android:paddingEnd="10dp"/>
 	<TextView
-			android:layout_width="340dp"
-			android:layout_height="49dp" android:id="@+id/idOaid"
-			android:textSize="@dimen/text_size"
+			android:layout_width="0dp"
+			android:layout_height="50dp" android:id="@+id/idOaid"
+			android:textSize="@dimen/text_size_small"
 			app:layout_constraintStart_toEndOf="@+id/idTypeOaid" android:layout_marginStart="8dp"
 			app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="208dp"
 			android:text="@string/hint_empty_id" android:paddingRight="15sp" android:textColor="@color/text_color"
 			app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
 			android:singleLine="false"/>
 	<TextView
+			android:layout_width="0dp"
+			android:layout_height="50dp" android:id="@+id/idImei"
+			android:textSize="@dimen/text_size_small"
+			app:layout_constraintStart_toEndOf="@+id/idTypeOaid" android:layout_marginStart="8dp"
+			android:text="@string/hint_empty_id" android:paddingRight="15sp" android:textColor="@color/text_color"
+			app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
+			android:singleLine="false" android:layout_marginTop="6dp"
+			app:layout_constraintTop_toBottomOf="@+id/idOaid"/>
+	<TextView
+			android:layout_width="0dp"
+			android:layout_height="45dp" android:id="@+id/idAndroidId"
+			android:textSize="@dimen/text_size_small"
+			app:layout_constraintStart_toEndOf="@+id/idTypeOaid" android:layout_marginStart="8dp"
+			android:text="@string/hint_empty_id" android:paddingRight="15sp" android:textColor="@color/text_color"
+			app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
+			android:singleLine="false" android:layout_marginTop="60dp"
+			app:layout_constraintTop_toBottomOf="@+id/idOaid"/>
+	<TextView
 			android:text="@string/id_type_oaid"
-			android:layout_width="42dp"
-			android:layout_height="29dp" android:id="@+id/idTypeOaid"
-			android:textSize="@dimen/text_size" android:textStyle="bold"
+			android:layout_width="70dp"
+			android:layout_height="24dp" android:id="@+id/idTypeOaid"
+			android:textSize="@dimen/text_size_small" android:textStyle="bold"
 			app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="12dp"
 			app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="208dp" android:textAllCaps="false"/>
+	<TextView
+			android:text="@string/id_type_imei"
+			android:layout_width="66dp"
+			android:layout_height="24dp" android:id="@+id/idTypeImei"
+			android:textSize="@dimen/text_size_small" android:textStyle="bold"
+			app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="12dp"
+			android:textAllCaps="false" android:layout_marginTop="32dp"
+			app:layout_constraintTop_toBottomOf="@+id/idTypeOaid"/>
+	<TextView
+			android:text="@string/id_type_android_id"
+			android:layout_width="63dp"
+			android:layout_height="29dp" android:id="@+id/idTypeAndroidId"
+			android:textSize="@dimen/text_size_small" android:textStyle="bold"
+			app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="12dp"
+			android:textAllCaps="false"
+			android:layout_marginTop="28dp" app:layout_constraintTop_toBottomOf="@+id/idTypeImei"/>
 	<CheckBox
 			android:text="@string/id_md5_radio"
 			android:layout_width="155dp"
 			android:layout_height="45dp" android:id="@+id/includeMd5Id"
-			android:layout_marginTop="28dp"
-			app:layout_constraintTop_toBottomOf="@+id/idTypeOaid" app:layout_constraintStart_toStartOf="parent"
-			android:layout_marginStart="12dp" android:textSize="@dimen/text_size"/>
+			app:layout_constraintStart_toStartOf="parent"
+			android:layout_marginStart="12dp" android:textSize="@dimen/text_size_small"
+			android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/idAndroidId"/>
 	<TextView
 			android:text="@string/hint_debug_message"
-			android:layout_width="375dp"
+			android:layout_width="0dp"
 			android:layout_height="86dp" android:id="@+id/debugMessage"
 			app:layout_constraintStart_toStartOf="parent"
 			android:layout_marginTop="40dp" app:layout_constraintTop_toBottomOf="@+id/includeMd5Id"
 			android:textSize="@dimen/text_size_small" android:textColor="@android:color/holo_orange_dark"
 			android:textAlignment="viewStart" android:paddingRight="15sp" app:layout_constraintEnd_toEndOf="parent"
-			app:layout_constraintHorizontal_bias="0.444" android:paddingLeft="20sp" android:singleLine="false"/>
+			app:layout_constraintHorizontal_bias="0.0" android:paddingLeft="20sp" android:singleLine="false"/>
 	<View
 			android:id="@+id/divider"
 			android:layout_width="match_parent"
@@ -63,14 +97,7 @@
 			android:background="?android:attr/listDivider"
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="20dp"
-			app:layout_constraintTop_toBottomOf="@+id/includeMd5Id"/>
-	<View
-			android:id="@+id/divider2"
-			android:layout_width="match_parent"
-			android:layout_height="1dp"
-			android:background="?android:attr/listDivider"
-			tools:layout_editor_absoluteX="4dp" android:layout_marginTop="24dp"
-			app:layout_constraintTop_toBottomOf="@+id/hintTouch"/>
+			app:layout_constraintTop_toBottomOf="@+id/includeMd5Id" app:layout_constraintHorizontal_bias="0.0"/>
 	<View
 			android:id="@+id/divider3"
 			android:layout_width="match_parent"
@@ -78,5 +105,12 @@
 			android:background="?android:attr/listDivider"
 			android:layout_marginTop="24dp"
 			app:layout_constraintTop_toBottomOf="@+id/debugMessage" app:layout_constraintStart_toStartOf="parent"
-			app:layout_constraintEnd_toEndOf="parent"/>
+			app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+	<View
+			android:id="@+id/divider2"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="?android:attr/listDivider"
+			tools:layout_editor_absoluteX="4dp" android:layout_marginTop="24dp"
+			app:layout_constraintTop_toBottomOf="@+id/hintTouch"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,8 +8,7 @@ public class Encodings {
 	/**
 	 * MD5
 	 *
-	 * @param str
-	 *            源字符串
+	 * @param str 源字符串
 	 * @return MD5串
 	 */
 	public static String md5(String str) {

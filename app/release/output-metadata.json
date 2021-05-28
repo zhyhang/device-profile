@@ -10,9 +10,9 @@
     {
       "type": "SINGLE",
       "filters": [],
-      "versionCode": 1,
-      "versionName": "1.0",
-      "outputFile": "device-profile-1.0.apk"
+      "versionCode": 3,
+      "versionName": "3.0",
+      "outputFile": "device-profile-3.0.apk"
     }
   ]
 }

@@ -7,4 +7,7 @@
 	<string name="hint_debug_message">Debug message</string>
 	<string name="id_md5_radio">Include md5</string>
 	<string name="hint_empty_id">The device id is empty or not reading</string>
+	<string name="hint_empty_id_debug">fb78bee4d479fa676637cf92b3054c7332bf6caae1d9c786eaf6cc6577b2da15</string>
+	<string name="id_type_imei">IMEI</string>
+	<string name="id_type_android_id">AndroidID</string>
 </resources>
